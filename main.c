@@ -1,4 +1,6 @@
 
+#define F_CPU 8000000UL
+
 #include <avr/io.h>
 #include <util/delay.h>
 #include <stdlib.h>
@@ -15,7 +17,7 @@ int main(void) {
   for (;;) {
     char i;
 
-    for (i = 0; i < 5; i++) {
+    for (i = 0; i < 30; i++) {
       _delay_ms(30);
     }
 
